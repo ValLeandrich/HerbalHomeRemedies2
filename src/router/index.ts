@@ -5,6 +5,7 @@ import ListOfHerbs from '../views/ListOfHerbs.vue'
 import Settings from '../views/Settings.vue'
 import Help from '../views/Help.vue'
 import About from '../views/About.vue'
+import Details from '../views/_details.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -35,6 +36,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/about',
     name: 'About',
     component: About
+  },
+  {
+    path: '/details',
+    name: 'Details',
+    component: Details
   }
 ]
 

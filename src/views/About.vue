@@ -15,6 +15,7 @@
           <ion-title size="large">About</ion-title>
         </ion-toolbar>
       </ion-header>
+      <ion-img :src="halfherbs" class="halfherbs"></ion-img>
     
       <div id="container">
         <strong>Ready to create an app?</strong>
@@ -25,7 +26,7 @@
 </template>
 
 <script lang="ts">
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonImg } from '@ionic/vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
@@ -35,7 +36,13 @@ export default defineComponent({
     IonHeader,
     IonPage,
     IonTitle,
-    IonToolbar
+    IonToolbar,
+    IonImg
+  },
+   data(){
+    return{
+     halfherbs: "../../assets/halfherbs.png"
+    }
   }
 });
 </script>

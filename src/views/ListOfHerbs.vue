@@ -15,16 +15,49 @@
           <ion-title size="large"></ion-title>
         </ion-toolbar>
       </ion-header>
-    
-      <div id="container">
-        <strong class="capitalize title">List Of Herbs</strong>
-      </div>
+       <ion-img :src="halfherbs" class="halfherbs"></ion-img>
+        <ion-list>
+    <ion-item>
+      <ion-label>Sambong</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Akapulko</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Niyog-niyogan</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Tsaang Gubat</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Ampalaya</ion-label>
+    </ion-item>
+        <ion-item>
+      <ion-label>Lagundi</ion-label>
+    </ion-item>
+        <ion-item>
+      <ion-label>Ulasimang Bato</ion-label>
+    </ion-item>
+        <ion-item>
+      <ion-label>Bawang</ion-label>
+    </ion-item>
+        <ion-item>
+      <ion-label>Bayabas</ion-label>
+    </ion-item>
+        <ion-item>
+      <ion-label>Yerba Buena</ion-label>
+    </ion-item>
+  </ion-list>
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
-import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
+import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar, IonImg,
+  IonItem,  
+  IonList, 
+  IonLabel,
+    } from '@ionic/vue';
 
 export default {
   name: 'Folder',
@@ -35,7 +68,16 @@ export default {
     IonMenuButton,
     IonPage,
     IonTitle,
-    IonToolbar
+    IonToolbar,
+    IonImg, 
+  IonItem, 
+  IonList, 
+  IonLabel, 
+  },
+  data(){
+    return{
+     halfherbs: "../../assets/halfherbs.png"
+    }
   }
 }
 </script>

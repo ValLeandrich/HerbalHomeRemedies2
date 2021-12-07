@@ -16,11 +16,13 @@
 </template>
 
 <script lang="ts">
-import { IonButtons, IonContent, IonMenuButton, IonPage,IonSearchbar} from "@ionic/vue";
-
-
-
-
+import {
+  IonButtons,
+  IonContent,
+  IonMenuButton,
+  IonPage,
+  IonSearchbar,
+} from "@ionic/vue";
 
 export default {
   name: "Folder",
@@ -29,7 +31,7 @@ export default {
     IonContent,
     IonMenuButton,
     IonPage,
-    IonSearchbar
+    IonSearchbar,
   },
 };
 </script>
@@ -37,8 +39,11 @@ export default {
 
 <style lang="scss" scoped>
 ion-content {
-  --background: url("/assets/bg/Sunflower-field-Fargo-North-Dakota.jpg")
-    no-repeat 100% 100%;
+  --background: url("/assets/bg/bgherbs.png") no-repeat cover fixed center;
+  background: url("/assets/bg/bgherbs.png") no-repeat fixed center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
 #container {
   text-align: center;
@@ -50,13 +55,13 @@ ion-content {
 }
 .menu {
   position: absolute;
-  top: -105px;
+  top: -95px;
 }
 ion-menu-button {
   color: #ffffff;
 }
-ion-searchbar{
-   border-radius: 25px;
+ion-searchbar {
+  border-radius: 25px;
 }
 #container p {
   font-size: 16px;

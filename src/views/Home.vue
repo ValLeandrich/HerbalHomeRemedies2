@@ -6,41 +6,78 @@
           <ion-menu-button></ion-menu-button>
         </ion-buttons>
         <strong class="capitalize title">Herbal Home Remedies</strong>
+        <ZipSearch v-on:get-zip="getZipInfo" />
+        <ZipInfo v-bind:info="info" />
+        <ClearInfo v-bind:info="info" v-on:clear-info="clearInfo" />
+        <!-- <form @submit="onSubmit">
         <ion-searchbar
           show-cancel-button="focus"
           cancel-button-text="Custom Cancel"
+          :value="herbal"
+          @input="zip = $event.target.value"
+          placeholder="Search"
         ></ion-searchbar>
+        </form> -->
       </div>
     </ion-content>
   </ion-page>
 </template>
 
-<script lang="ts">
+<script>
+import ZipSearch from "../components/ZipSearch";
+import ZipInfo from "../components/ZipInfo";
+import ClearInfo from "../components/ClearInfo";
 import {
   IonButtons,
   IonContent,
   IonMenuButton,
   IonPage,
-  IonSearchbar,
 } from "@ionic/vue";
 
 export default {
-  name: "Folder",
+  name: "Home",
   components: {
     IonButtons,
     IonContent,
     IonMenuButton,
     IonPage,
-    IonSearchbar,
+    ZipSearch, 
+    ZipInfo, 
+    ClearInfo,
   },
+  data() {
+    return {
+      info: null
+    };
+  },
+ methods: {
+    async getZipInfo(zip) {
+      const res = await fetch(`https://api.zippopotam.us/us/${zip}`);
+      if (res.status == 404) {
+        this.showAlert();
+      }
+      this.info = await res.json();
+    },
+    clearInfo() {
+      this.info = null;
+    },
+    showAlert() {
+      return this.$ionic.alertController
+        .create({
+          header: "Not Valid",
+          message: "Please enter a valid US zipcode",
+          buttons: ["OK"]
+        })
+        .then(a => a.present());
+    }
+  }
 };
 </script>
-
 
 <style lang="scss" scoped>
 ion-content {
   --background: url("/assets/bg/bgherbs.png") no-repeat cover fixed center;
-  background: url("/assets/bg/bgherbs.png") no-repeat fixed center; 
+  background: url("/assets/bg/bgherbs.png") no-repeat fixed center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -55,7 +92,7 @@ ion-content {
 }
 .menu {
   position: absolute;
-  top: -95px;
+  top: -45px;
 }
 ion-menu-button {
   color: #ffffff;

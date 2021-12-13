@@ -42,9 +42,9 @@
           </li>
           <li>
             Skin diseases (dermatitis, scabies, ulcer, eczema) -Wash &amp; clean
-            the skin/wound with the decoction
+            the skin/wound with the decoction.
           </li>
-          <li>Headache – Crush leaves may be applied on the forehead</li>
+          <li>Headache – Crush leaves may be applied on the forehead.</li>
           <li>
             Rheumatism, sprain, contusions, insect bites – Pound the leaves and
             apply on affected area.
@@ -125,12 +125,11 @@ export default defineComponent({
 
 .lagundi {
   display: block;
-  width: 500px;
+  width: auto;
   height: 200px;
   margin-top: 25px;
   margin-bottom: 15px;
-  object-fit: center;
-  object-position: center;
+  margin: 0 auto;
 }
 .title {
     font-size: 45px;

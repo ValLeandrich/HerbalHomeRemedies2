@@ -6,6 +6,7 @@ import Settings from '../views/Settings.vue'
 import Help from '../views/Help.vue'
 import About from '../views/About.vue'
 import Details from '../views/_details.vue'
+import Result from '../views/Result.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -41,6 +42,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/details',
     name: 'Details',
     component: Details
+  },
+  {
+    path: '/result',
+    name: 'Result',
+    component: Result
   }
 ]
 

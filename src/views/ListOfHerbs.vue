@@ -60,7 +60,7 @@ import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, Io
     } from '@ionic/vue';
 
 export default {
-  name: 'Folder',
+  name: 'ListOfHerbs',
   components: {
     IonButtons,
     IonContent,

@@ -1,5 +1,6 @@
 <template>
-  <ion-card v-if="info">
+  <div v-if="output">
+    <ion-card @click="details" v-if="info">
     <ion-card-header>
       <ion-card-subtitle>{{info['post code']}}</ion-card-subtitle>
       <ion-card-title>{{info['places'][0]['place name']}}</ion-card-title>
@@ -28,12 +29,23 @@
       </ion-list>
     </ion-card-content>
   </ion-card>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "ZipInfo",
-  props: ["info"]
+  name: "HerbInfo",
+  props: ["info"],
+  data() {
+    return {
+       output: true,
+    }
+  },
+  methods: {
+    details() {
+      this.$router.push("/details");
+      this.output = false;
+    },
+  }
 };
 </script>
-

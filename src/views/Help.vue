@@ -18,8 +18,8 @@
       <ion-img :src="halfherbs" class="halfherbs"></ion-img>
     
       <div id="container">
-        <strong>Ready to create an app?</strong>
-        <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+        <strong>To be edited.</strong>
+        <p>Brief instruction on how to use the app...</p>
       </div>
     </ion-content>
   </ion-page>

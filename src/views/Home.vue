@@ -6,8 +6,8 @@
           <ion-menu-button></ion-menu-button>
         </ion-buttons>
         <strong class="capitalize title">Herbal Home Remedies</strong>
-        <ZipSearch v-on:get-zip="getZipInfo" />
-        <ZipInfo v-bind:info="info" />
+        <HerbSearch v-on:get-herb="getHerbInfo" />
+        <HerbInfo v-bind:info="info" />
         <ClearInfo v-bind:info="info" v-on:clear-info="clearInfo" />
         <!-- <form @submit="onSubmit">
         <ion-searchbar
@@ -24,15 +24,10 @@
 </template>
 
 <script>
-import ZipSearch from "../components/ZipSearch";
-import ZipInfo from "../components/ZipInfo";
+import HerbSearch from "../components/HerbSearch";
+import HerbInfo from "../components/HerbInfo";
 import ClearInfo from "../components/ClearInfo";
-import {
-  IonButtons,
-  IonContent,
-  IonMenuButton,
-  IonPage,
-} from "@ionic/vue";
+import { IonButtons, IonContent, IonMenuButton, IonPage } from "@ionic/vue";
 
 export default {
   name: "Home",
@@ -41,22 +36,24 @@ export default {
     IonContent,
     IonMenuButton,
     IonPage,
-    ZipSearch, 
-    ZipInfo, 
+    HerbSearch,
+    HerbInfo,
     ClearInfo,
   },
   data() {
     return {
-      info: null
+      info: null,
+      clearBtn: true,
     };
   },
- methods: {
-    async getZipInfo(zip) {
-      const res = await fetch(`https://api.zippopotam.us/us/${zip}`);
+  methods: {
+    async getHerbInfo(herb) {
+      const res = await fetch(`https://api.zippopotam.us/us/${herb}`);
       if (res.status == 404) {
         this.showAlert();
       }
       this.info = await res.json();
+      this.clearBtn = false;
     },
     clearInfo() {
       this.info = null;
@@ -65,12 +62,12 @@ export default {
       return this.$ionic.alertController
         .create({
           header: "Not Valid",
-          message: "Please enter a valid US zipcode",
-          buttons: ["OK"]
+          message: "Please enter a valid herb or symptom.",
+          buttons: ["OK"],
         })
-        .then(a => a.present());
-    }
-  }
+        .then((a) => a.present());
+    },
+  },
 };
 </script>
 

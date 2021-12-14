@@ -38,7 +38,7 @@ import {
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "Home",
+  name: "Settings",
   components: {
     IonContent,
     IonHeader,
@@ -86,10 +86,11 @@ export default defineComponent({
 ion-toggle {
   --handle-spacing: 0px;
   padding: 0;
-  margin: 20px 20px 0 0;
+  margin: -18px 20px 0 0;
   float: right;
 }
 ion-text {
-  margin-top: 200px;
+  display: block;
+  margin-top: 40px;
 }
 </style>

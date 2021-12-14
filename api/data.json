@@ -1,0 +1,118 @@
+[
+    {
+        "id": 1,
+        "herbName": "Lagundi",
+        "image": "../../assets/bg/lagundi.png",
+        "briefDescription": "Lagundi is used in treating asthma, cough and colds, fever, dysentery, pain, skin diseases (scabies, ulcer, eczema), wounds.",
+        "uses&Preparation": [
+            "Lagundi leaves are prepared through decoction, used through drinking of the boiled solution and washing the affected site.",
+            "Asthma, Cough & Fever – Decoction ( Boil raw fruits or leaves in 2 glasses of water for 15 minutes)Dysentery, Colds & Pain – Decoction ( Boil a handful of leaves & flowers in water to produce a glass, three times a day)",
+            "Skin diseases (dermatitis, scabies, ulcer, eczema) -Wash & clean the skin/wound with the decoction",
+            "Headache – Crush leaves may be applied on the forehead",
+            "Rheumatism, sprain, contusions, insect bites – Pound the leaves and apply on affected area."
+        ]
+    },
+    {
+        "id": 2,
+        "herbName": "Yerba Buena",
+        "image": "../../assets/bg/yerba_buena.png",
+        "briefDescription": "Yerba Buena is used in treating headache, stomachache, cough and colds, rheumatism, and arthritis.",
+        "uses&Preparation": [
+            "Yerba Buena leaves are prepared through decoction, and massage sap; used through drinking of the boiled solution and massaging the affected area.",
+            "Pain (headache, stomachache) – Boil chopped leaves in 2 glasses of water for 15 minutes. Divide decoction into 2 parts, drink one part every 3 hours.",
+            "Rheumatism, arthritis and headache – Crush the fresh leaves and squeeze sap. Massage sap on painful parts with eucalyptus.",
+            "Cough & Cold – Soak 10 fresh leaves in a glass of hot water, drink as tea. (expectorant)",
+            "Swollen gums – Steep 6 g. of fresh plant in a glass of boiling water for 30 minutes. Use as a gargle solution.",
+            "Toothache – Cut fresh plant and squeeze sap. Soak a piece of cotton in the sap and insert this in aching tooth cavity.",
+            "Menstrual & gas pain – Soak a handful of leaves in a lass of boiling water. Drink infusion.",
+            "Nausea & Fainting – Crush leaves and apply at nostrils of patients.",
+            "Insect bites – Crush leaves and apply juice on affected area or pound leaves until like a paste, rub on affected area.",
+            "Pruritis – Boil plant alone or with eucalyptus in water. Use decoction as a wash on affected area."
+        ]
+    },
+    {
+        "id": 3,
+        "herbName": "Sambong",
+        "image": "../../assets/bg/sambong.png",
+        "briefDescription": "Sambong is used as antiedema and antiurolithiasis.",
+        "uses&Preparation": [
+            "Sambong leaves are prepared through decoction and used through drinking of the boiled solution.",
+            "Anti-edema, diuretic, anti-urolithiasis – Boil chopped leaves in a glass of water for 15 minutes until one glassful remains. Divide decoction into 3 parts, drink one part 3 times a day.",
+            "Diarrhea – Chopped leaves and boil in a glass of water for 15 minutes. Drink one part every 3 hours."
+        ]
+    },
+    {
+        "id": 4,
+        "herbName": "Tsaang Gubat",
+        "image": "../../assets/bg/tsaang_gubat.png",
+        "briefDescription": "Tsaang Gubat is used for diarrhea and stomachache.",
+        "uses&Preparation": [
+            "Tsaang Gubat leaves are prepared through decoction and used through drinking of the boiled solution.",
+            "Diarrhea – Boil chopped leaves into 2 glasses of water for 15 minutes. Divide decoction into 4 parts. Drink 1 part every 3 hours.",
+            "Stomachache – Boil chopped leaves in 1 glass of water for 15 minutes. Cool and strain."
+        ]
+    },
+    {
+        "id": 5,
+        "herbName": "Niyug-niyogan",
+        "image": "../../assets/bg/niyug-nyogan.png",
+        "briefDescription": "Niyog-niyogan is used as antihelminthic.",
+        "uses&Preparation": [
+            "Niyog-niyogan seeds are prepared through decoction and used through drinking of the boiled solution.",
+            "Anti-helmintic – The seeds are taken 2 hours after supper. If no worms are expelled, the dose may be repeated after one week. (Caution: Not to be given to children below 4 years old)"
+        ]
+    },
+    {
+        "id": 6,
+        "herbName": "Bayabas/Guava",
+        "image": "../../assets/bg/guava.png",
+        "briefDescription": "Bayabas is used in washing of wounds, as gargle, and in treating diarrhea and toothache.",
+        "uses&Preparation": [
+            "Bayabas leaves are prepared through decoction and used through drinking of the boiled solution or washing and bathing.",
+            "For washing wounds – Maybe use twice a day.",
+            "Diarrhea – May be taken 3-4 times a day.",
+            "As gargle and for toothache – Warm decoction is used for gargle. Freshly pounded leaves are used for toothache. Boil chopped leaves for 15 minutes at low fire. Do not cover and then let it cool and strain"
+        ]
+    },
+    {
+        "id": 7,
+        "herbName": "Akapulko",
+        "image": "../../assets/bg/akapulko.png",
+        "briefDescription": "Akapulko is used as antifungal.",
+        "uses&Preparation": [
+            "Akapulko leaves are prepared through poultice or used through direct application of the recommended plant material on the affected part.",
+            "Anti-fungal (tinea flava, ringworm, athlete’s foot and scabies) – Fresh, matured leaves are pounded. Apply soap to the affected area 1-2 times a day."
+        ]
+    },
+    {
+        "id": 8,
+        "herbName": "Ulasimang Bato",
+        "image": "../../assets/bg/ulasimang_bato.png",
+        "briefDescription": "Ulasimang-bato/Pansit-pansitan is used to lower blood uric acid.",
+        "uses&Preparation": [
+            "Ulasimang-bato/Pansit-pansitan stems and leaves are prepared through decoction and used through drinking of the boiled solution or eating the recommended raw plant material.",
+            "Lowers uric acid (rheumatism and gout) – One a half cup leaves are boiled in two glass of water over low fire. Do not cover pot. Divide into 3 parts and drink one part 3 times a day."
+        ]
+    },
+    {
+        "id": 9,
+        "herbName": "Bawang",
+        "image": "../../assets/bg/bawang.png",
+        "briefDescription": "Bawang is used in treating toothache and hypertension and lowering blood cholesterol.",
+        "uses&Preparation": [
+            "Bawang bulbs are used through eating the recommended raw or fried plant material, or direct application on the affected part.",
+            "Hypertension – Maybe fried, roasted, soaked in vinegar for 30 minutes, or blanched in boiled water for 15 minutes. Take 2 pieces 3 times a day after meals.",
+            "Toothache – Pound a small piece and apply to affected area."
+        ]
+    },
+    {
+        "id": 10,
+        "herbName": "Ampalaya",
+        "image": "../../assets/bg/ampalaya.png",
+        "briefDescription": "Ampalaya is used in treating diabetes mellitus (mild non-insulin dependent)",
+        "uses&Preparation": [
+            "Ampalaya leaves are prepared through decoction or steaming the recommended plant material and used through drinking of the boiled solution.",
+            "Diabetes Mellitus (Mild non-insulin dependent) – Chopped leaves then boil in a glass of water for 15 minutes. Do not cover. Cool and strain. Take 1/3 cup 3 times a day after meals."
+        ]
+    }
+]

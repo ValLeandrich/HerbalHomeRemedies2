@@ -3,9 +3,13 @@
 </template>
 
 <script>
+import { IonButton } from "@ionic/vue";
 export default {
   name: "ClearInfo",
-  props: ["info"]
+  props: ["info"],
+  components: {
+    IonButton
+  },
 };
 </script>
 

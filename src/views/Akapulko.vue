@@ -13,37 +13,22 @@
       <ion-card class="bg-herbs">
       </ion-card>
 
-      <ion-title class="title">Lagundi</ion-title>
+      <ion-title class="title">Akapulko</ion-title>
 
-      <ion-img :src="lagundi" class="lagundi"></ion-img>
-      <ion-text class="text1">
-        The most versatile and widely used nut, it should be used with any low
-        carbon bolt or screw that is heat-treated.
-      </ion-text>
+      <ion-img :src="akapulko" class="akapulko"></ion-img>
+      <ion-text class="text1"> Akapulko is used as antifungal. </ion-text>
 
       <ion-text class="text2">
         Uses &amp; Preparation:
         <ul class="list">
           <li>
-            Lagundi leaves are prepared through decoction, used through drinking
-            of the boiled solution and washing the affected site.
+            Akapulko leaves are prepared through poultice or used through direct
+            application of the recommended plant material on the affected part.
           </li>
           <li>
-            Asthma, Cough &amp; Fever – Decoction ( Boil raw fruits or leaves in
-            2 glasses of water for 15 minutes)
-          </li>
-          <li>
-            Dysentery, Colds &amp; Pain – Decoction ( Boil a handful of leaves
-            &amp; flowers in water to produce a glass, three times a day)
-          </li>
-          <li>
-            Skin diseases (dermatitis, scabies, ulcer, eczema) -Wash &amp; clean
-            the skin/wound with the decoction.
-          </li>
-          <li>Headache – Crush leaves may be applied on the forehead.</li>
-          <li>
-            Rheumatism, sprain, contusions, insect bites – Pound the leaves and
-            apply on affected area.
+            Anti-fungal (tinea flava, ringworm, athlete’s foot and scabies) –
+            Fresh, matured leaves are pounded. Apply soap to the affected area
+            1-2 times a day.
           </li>
         </ul>
       </ion-text>
@@ -63,7 +48,7 @@ import {
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "Details",
+  name: "Akapulko",
   components: {
     IonContent,
     IonHeader,
@@ -74,7 +59,7 @@ export default defineComponent({
   },
   data() {
     return {
-      lagundi: "../../assets/bg/lagundi.png",
+      akapulko: "../../assets/bg/akapulko.png",
     };
   },
 });
@@ -119,7 +104,7 @@ export default defineComponent({
   background-size: cover;
 }
 
-.lagundi {
+.akapulko {
   display: block;
   width: auto;
   height: 200px;
@@ -128,18 +113,18 @@ export default defineComponent({
   margin: 0 auto;
 }
 .title {
-    font-size: 45px;
+  font-size: 45px;
 }
 .text1 {
-    width: 220px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    display: block;
+  width: 220px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: block;
 }
 .list {
-    margin-right: 30px;
+  margin-right: 30px;
 }
 .text2 {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 </style>

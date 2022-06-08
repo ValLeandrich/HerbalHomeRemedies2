@@ -18,7 +18,7 @@
        <ion-img :src="halfherbs" class="halfherbs"></ion-img>
         <ion-list>
     <ion-item>
-      <ion-label>Sambong</ion-label>
+      <ion-label @click="() => router.push('/sambong')">Sambong</ion-label>
     </ion-item>
     <ion-item>
       <ion-label>Akapulko</ion-label>

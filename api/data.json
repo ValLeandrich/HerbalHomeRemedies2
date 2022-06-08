@@ -64,14 +64,14 @@
     },
     {
         "id": 6,
-        "herbName": "Bayabas/Guava",
+        "herbName": "Bayabas",
         "image": "../../assets/bg/guava.png",
         "briefDescription": "Bayabas is used in washing of wounds, as gargle, and in treating diarrhea and toothache.",
         "uses&Preparation": [
             "Bayabas leaves are prepared through decoction and used through drinking of the boiled solution or washing and bathing.",
             "For washing wounds – Maybe use twice a day.",
             "Diarrhea – May be taken 3-4 times a day.",
-            "As gargle and for toothache – Warm decoction is used for gargle. Freshly pounded leaves are used for toothache. Boil chopped leaves for 15 minutes at low fire. Do not cover and then let it cool and strain"
+            "As gargle and for toothache – Warm decoction is used for gargle. Freshly pounded leaves are used for toothache. Boil chopped leaves for 15 minutes at low fire. Do not cover and then let it cool and strain."
         ]
     },
     {

@@ -3,7 +3,7 @@ import { CapacitorConfig } from '@capacitor/cli';
 const config: CapacitorConfig = {
   appId: 'com.example.app',
   appName: 'HerbalHomeRemedies2',
-  webDir: 'dist',
+  webDir: 'public',
   bundledWebRuntime: false
 };
 

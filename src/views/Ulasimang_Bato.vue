@@ -13,37 +13,21 @@
       <ion-card class="bg-herbs">
       </ion-card>
 
-      <ion-title class="title">Lagundi</ion-title>
+      <ion-title class="title">Ulasimang Bato</ion-title>
 
-      <ion-img :src="lagundi" class="lagundi"></ion-img>
+      <ion-img :src="ulasimangbato" class="ulasimang_bato"></ion-img>
       <ion-text class="text1">
-        The most versatile and widely used nut, it should be used with any low
-        carbon bolt or screw that is heat-treated.
+        Ulasimang-bato/Pansit-pansitan is used to lower blood uric acid.
       </ion-text>
 
       <ion-text class="text2">
         Uses &amp; Preparation:
         <ul class="list">
           <li>
-            Lagundi leaves are prepared through decoction, used through drinking
-            of the boiled solution and washing the affected site.
+            Ulasimang-bato/Pansit-pansitan stems and leaves are prepared through decoction and used through drinking of the boiled solution or eating the recommended raw plant material.
           </li>
           <li>
-            Asthma, Cough &amp; Fever – Decoction ( Boil raw fruits or leaves in
-            2 glasses of water for 15 minutes)
-          </li>
-          <li>
-            Dysentery, Colds &amp; Pain – Decoction ( Boil a handful of leaves
-            &amp; flowers in water to produce a glass, three times a day)
-          </li>
-          <li>
-            Skin diseases (dermatitis, scabies, ulcer, eczema) -Wash &amp; clean
-            the skin/wound with the decoction.
-          </li>
-          <li>Headache – Crush leaves may be applied on the forehead.</li>
-          <li>
-            Rheumatism, sprain, contusions, insect bites – Pound the leaves and
-            apply on affected area.
+            Lowers uric acid (rheumatism and gout) – One a half cup leaves are boiled in two glass of water over low fire. Do not cover pot. Divide into 3 parts and drink one part 3 times a day.
           </li>
         </ul>
       </ion-text>
@@ -63,7 +47,7 @@ import {
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "Details",
+  name: "Ulasimang_Bato",
   components: {
     IonContent,
     IonHeader,
@@ -74,7 +58,7 @@ export default defineComponent({
   },
   data() {
     return {
-      lagundi: "../../assets/bg/lagundi.png",
+      ulasimangbato: "../../assets/bg/ulasimang_bato.png",
     };
   },
 });
@@ -119,7 +103,7 @@ export default defineComponent({
   background-size: cover;
 }
 
-.lagundi {
+.ulasimang_bato {
   display: block;
   width: auto;
   height: 200px;
@@ -128,18 +112,18 @@ export default defineComponent({
   margin: 0 auto;
 }
 .title {
-    font-size: 45px;
+  font-size: 45px;
 }
 .text1 {
-    width: 220px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    display: block;
+  width: 220px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: block;
 }
 .list {
-    margin-right: 30px;
+  margin-right: 30px;
 }
 .text2 {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 </style>

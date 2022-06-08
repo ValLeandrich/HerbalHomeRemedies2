@@ -13,19 +13,29 @@
         </ion-item>
       </ion-col>
       <ion-col>
-        <ion-button type="submit" color="primary" expand="block">Find</ion-button>
+        <ion-button type="submit" color="primary" expand="block"
+          >Find</ion-button
+        >
       </ion-col>
     </form>
   </ion-grid>
 </template>
 
 <script>
- import { alertController } from '@ionic/vue';
+import { alertController, IonInput, IonItem, IonLabel, IonCol, IonButton, IonGrid } from "@ionic/vue";
 export default {
   name: "HerbSearch",
+  components: {
+    IonInput,
+    IonItem,
+    IonLabel,
+    IonCol,
+    IonButton,
+    IonGrid
+  },
   data() {
     return {
-      herb: ""
+      herb: "",
     };
   },
   methods: {
@@ -48,30 +58,30 @@ export default {
     //     })
     //     .then(a => a.present());
     // },
-     async presentAlertConfirm() {
-        const alert = await alertController.create({
-          cssClass: 'my-custom-class',
-          header: 'Error!',
-          message: 'Please enter a valid herb/symptom.',
-          buttons: [
-            // {
-            //   text: 'Cancel',
-            //   role: 'cancel',
-            //   cssClass: 'secondary',
-            //   handler: (blah) => {
-            //     console.log('Confirm Cancel:', blah);
-            //   },
-            // },
-            {
-              text: 'Okay',
-              handler: () => {
-                console.log('Confirm Okay');
-              },
+    async presentAlertConfirm() {
+      const alert = await alertController.create({
+        cssClass: "my-custom-class",
+        header: "Error!",
+        message: "Please enter a valid herb/symptom.",
+        buttons: [
+          // {
+          //   text: 'Cancel',
+          //   role: 'cancel',
+          //   cssClass: 'secondary',
+          //   handler: (blah) => {
+          //     console.log('Confirm Cancel:', blah);
+          //   },
+          // },
+          {
+            text: "Okay",
+            handler: () => {
+              console.log("Confirm Okay");
             },
-          ],
-        });
-        return alert.present();
-      },
-  }
+          },
+        ],
+      });
+      return alert.present();
+    },
+  },
 };
 </script>
